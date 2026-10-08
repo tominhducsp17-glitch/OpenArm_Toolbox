@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>openarm_controller</name>
+  <version>0.1.0</version>
+  <description>Node "controller": calls the openarm_control library through the control-toolbox Controller interface and publishes tau_ff. Launch file for the trajectory + controller pipeline.</description>
+  <maintainer email="tominhducsp17@gmail.com">To Minh Duc</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>ament_index_cpp</depend>
+  <depend>openarm_control</depend>
+  <exec_depend>openarm_trajectory</exec_depend>
+  <test_depend>launch_testing_ament_cmake</test_depend>
+  <test_depend>launch_ros</test_depend>
+  <test_depend>rclpy</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

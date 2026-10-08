@@ -1,0 +1,16 @@
+# Node "controller" (openarm_controller). Joint order follows the official URDF.
+controller:
+  ros__parameters:
+    urdf_path: ""                       # empty: openarm_control share/urdf/openarm_v1_bimanual.urdf
+    joint_names: [openarm_left_joint1, openarm_left_joint2, openarm_left_joint3, openarm_left_joint4,
+                  openarm_left_joint5, openarm_left_joint6, openarm_left_joint7,
+                  openarm_right_joint1, openarm_right_joint2, openarm_right_joint3, openarm_right_joint4,
+                  openarm_right_joint5, openarm_right_joint6, openarm_right_joint7]
+    controller_type: ctc_feedforward    # ctc_feedforward | gravity_compensation (openarm_control)
+    torque_limit: [15.0, 15.0, 10.0, 10.0, 3.0, 3.0, 3.0, 15.0, 15.0, 10.0, 10.0, 3.0, 3.0, 3.0]
+    acceleration_cutoff_hz: 5.0         # low-pass of ddq_target estimated from dq_target
+    max_abs_acceleration: 20.0
+    input_timeout_s: 0.1
+    state_topic: joint_states
+    command_topic: joint_commands
+    output_topic: controller/tau_ff
