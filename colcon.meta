@@ -1,0 +1,17 @@
+{
+  "names": {
+    "ct_core": {
+      "cmake-args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DBUILD_TESTS=OFF",
+        "-DBUILD_EXAMPLES=OFF",
+        "-DCMAKE_DISABLE_FIND_PACKAGE_Python=ON",
+        "-DCMAKE_DISABLE_FIND_PACKAGE_PythonLibs=ON",
+        "-DCMAKE_DISABLE_FIND_PACKAGE_Qwt=ON",
+        "-DCMAKE_DISABLE_FIND_PACKAGE_Qt4=ON",
+        "-DCMAKE_DISABLE_FIND_PACKAGE_LLVM=ON",
+        "-DCMAKE_DISABLE_FIND_PACKAGE_Clang=ON"
+      ]
+    }
+  }
+}
