@@ -1,0 +1,183 @@
+{
+  "name": "tissue_wipe_x2",
+  "config": "configs/task_tissue_wipe.yaml",
+  "arm": "right",
+  "joint_names": [
+    "openarm_right_joint1",
+    "openarm_right_joint2",
+    "openarm_right_joint3",
+    "openarm_right_joint4",
+    "openarm_right_joint5",
+    "openarm_right_joint6",
+    "openarm_right_joint7"
+  ],
+  "rate_hz": 400,
+  "time_scale": 2.0,
+  "duration_s": 59.1975,
+  "rows": 23680,
+  "phases": [
+    {
+      "label": "hold_start_hanging",
+      "start_s": 0.0,
+      "duration_s": 2.0
+    },
+    {
+      "label": "to_reach_box_low",
+      "start_s": 2.0,
+      "duration_s": 6.0
+    },
+    {
+      "label": "hold_reach_box_low",
+      "start_s": 8.0,
+      "duration_s": 1.0
+    },
+    {
+      "label": "to_grasp_tissue",
+      "start_s": 9.0,
+      "duration_s": 3.0
+    },
+    {
+      "label": "hold_grasp_tissue",
+      "start_s": 12.0,
+      "duration_s": 2.0
+    },
+    {
+      "label": "to_lift_up",
+      "start_s": 14.0,
+      "duration_s": 5.0
+    },
+    {
+      "label": "hold_lift_up",
+      "start_s": 19.0,
+      "duration_s": 1.0
+    },
+    {
+      "label": "to_wipe_center",
+      "start_s": 20.0,
+      "duration_s": 4.0
+    },
+    {
+      "label": "hold_wipe_center",
+      "start_s": 24.0,
+      "duration_s": 0.6
+    },
+    {
+      "label": "to_wipe_inward",
+      "start_s": 24.6,
+      "duration_s": 3.0
+    },
+    {
+      "label": "hold_wipe_inward",
+      "start_s": 27.6,
+      "duration_s": 0.4
+    },
+    {
+      "label": "to_wipe_outward",
+      "start_s": 28.0,
+      "duration_s": 4.0
+    },
+    {
+      "label": "hold_wipe_outward",
+      "start_s": 32.0,
+      "duration_s": 0.4
+    },
+    {
+      "label": "to_wipe_inward",
+      "start_s": 32.4,
+      "duration_s": 4.0
+    },
+    {
+      "label": "hold_wipe_inward",
+      "start_s": 36.4,
+      "duration_s": 0.4
+    },
+    {
+      "label": "to_wipe_outward",
+      "start_s": 36.8,
+      "duration_s": 4.0
+    },
+    {
+      "label": "hold_wipe_outward",
+      "start_s": 40.8,
+      "duration_s": 0.4
+    },
+    {
+      "label": "to_wipe_center",
+      "start_s": 41.2,
+      "duration_s": 3.0
+    },
+    {
+      "label": "hold_wipe_center",
+      "start_s": 44.2,
+      "duration_s": 1.0
+    },
+    {
+      "label": "to_release_side",
+      "start_s": 45.2,
+      "duration_s": 4.0
+    },
+    {
+      "label": "hold_release_side",
+      "start_s": 49.2,
+      "duration_s": 2.0
+    },
+    {
+      "label": "to_start_hanging",
+      "start_s": 51.2,
+      "duration_s": 6.0
+    },
+    {
+      "label": "hold_start_hanging",
+      "start_s": 57.2,
+      "duration_s": 2.0
+    }
+  ],
+  "max_abs_velocity_rad_s": [
+    0.125,
+    0.094,
+    0.281,
+    0.266,
+    0.0,
+    0.15,
+    0.188
+  ],
+  "max_abs_acceleration_rad_s2": [
+    0.072,
+    0.072,
+    0.217,
+    0.136,
+    0.0,
+    0.092,
+    0.144
+  ],
+  "q_min": [
+    0.0,
+    0.0,
+    -0.3,
+    0.15,
+    0.0,
+    -0.4,
+    -0.2
+  ],
+  "q_max": [
+    0.75,
+    0.3,
+    0.3,
+    1.2,
+    0.0,
+    0.2,
+    0.2
+  ],
+  "tcp_min_xyz": [
+    0.06,
+    -0.352,
+    0.081
+  ],
+  "tcp_max_xyz": [
+    0.527,
+    -0.047,
+    0.687
+  ],
+  "self_collisions": [],
+  "problems": []
+}
